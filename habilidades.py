@@ -25,5 +25,9 @@ habilidades_arbol = {
     "Especial": HabilidadNodo("Especial", 8),
 }
 
-
+def bono_habilidad(nombre_habilidad):
+    nodo = habilidades_arbol.get(nombre_habilidad)
+    if nodo:
+        return nodo.bono_total()
+    return 0
 
